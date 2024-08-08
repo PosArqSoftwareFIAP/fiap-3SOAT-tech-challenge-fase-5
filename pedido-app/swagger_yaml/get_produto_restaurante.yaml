@@ -1,0 +1,43 @@
+tags:
+  - Produto
+parameters:
+  - name: id_restaurante
+    in: path
+    description: ID do restaurante
+    required: true
+    type: integer
+responses:
+  200:
+    description: Lista de produtos disponíveis do restaurante
+    schema:
+      type: array
+      items:
+        properties:
+          id:
+            type: integer
+            description: ID do produto
+          nome:
+            type: string
+            description: Nome do produto
+          descricao:
+            type: string
+            description: Descrição do produto
+          preco:
+            type: float
+            description: Preço do produto
+          disponivel:
+            type: integer
+            description: Quantidade disponível
+          # Você pode adicionar mais campos dependendo da estrutura da sua tabela `produto`
+  404:
+    description: Produto não encontrado
+    schema:
+      properties:
+        message:
+          type: string
+  400:
+    description: Erro ao buscar produto
+    schema:
+      properties:
+        error:
+          type: string

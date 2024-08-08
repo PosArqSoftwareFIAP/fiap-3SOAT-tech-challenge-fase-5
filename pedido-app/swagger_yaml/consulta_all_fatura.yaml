@@ -1,0 +1,21 @@
+tags:
+  - Fatura
+responses:
+  200:
+    description: Lista de todas as faturas
+    schema:
+      type: array
+      items:
+        $ref: "#/definitions/Fatura"
+  404:
+    description: Faturas não encontradas
+    schema:
+      properties:
+        message:
+          type: string
+  400:
+    description: Erro ao recuperar faturas
+    schema:
+      properties:
+        error:
+          type: string

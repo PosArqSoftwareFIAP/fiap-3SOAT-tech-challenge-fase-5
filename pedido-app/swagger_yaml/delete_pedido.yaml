@@ -1,0 +1,13 @@
+tags:
+  - Pedido
+parameters:
+  - name: id
+    in: path
+    description: ID do pedido a ser excluído.
+    required: true
+    type: integer
+responses:
+  200:
+    description: Pedido excluído com sucesso.
+  400:
+    description: Erro ao excluir o pedido.

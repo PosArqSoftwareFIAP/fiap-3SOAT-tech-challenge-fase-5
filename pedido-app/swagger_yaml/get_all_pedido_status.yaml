@@ -1,0 +1,29 @@
+tags:
+  - Pedido
+responses:
+  200:
+    description: Lista de todos os pedidos com status diferente de 5
+    schema:
+      type: array
+      items:
+        properties:
+          id_pedido:
+            type: integer
+          status_pedido:
+            type: integer
+          data_hora_pedido:
+            type: string
+            format: date-time
+          # ... outros campos do pedido ...
+  404:
+    description: Pedido não encontrado
+    schema:
+      properties:
+        message:
+          type: string
+  400:
+    description: Erro ao buscar pedidos
+    schema:
+      properties:
+        error:
+          type: string

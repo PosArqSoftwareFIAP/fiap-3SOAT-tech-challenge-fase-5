@@ -1,0 +1,38 @@
+tags:
+  - Restaurante
+parameters:
+  - in: path
+    name: id
+    type: integer
+    required: true
+    description: ID do restaurante a ser consultado
+responses:
+  200:
+    description: Retorna informações do restaurante
+    schema:
+      type: object
+      properties:
+        nome:
+          type: string
+        rua:
+          type: string
+        numero:
+          type: integer
+        bairro:
+          type: string
+        cep:
+          type: string
+        estado:
+          type: string
+        cidade:
+          type: string
+        descricao:
+          type: string
+        categoria:
+          type: string
+        cnpj:
+          type: string
+  404:
+    description: Restaurante não encontrado
+  400:
+    description: Erro ao recuperar informações do restaurante

@@ -1,0 +1,13 @@
+tags:
+  - Restaurante
+parameters:
+  - in: path
+    name: id
+    type: integer
+    required: true
+    description: ID do restaurante a ser excluído
+responses:
+  200:
+    description: Restaurante excluído com sucesso
+  400:
+    description: Erro ao excluir o restaurante

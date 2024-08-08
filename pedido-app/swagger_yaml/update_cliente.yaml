@@ -1,0 +1,39 @@
+tags:
+  - Cliente
+parameters:
+  - name: id
+    in: path
+    description: ID do cliente a ser atualizado
+    required: true
+    type: integer
+  - name: body
+    in: body
+    description: Informações do cliente a ser atualizado
+    required: true
+    schema:
+      type: object
+      properties:
+        nome:
+          type: string
+        cpf:
+          type: string
+        telefone:
+          type: string
+        email:
+          type: string
+        data_nascimento:
+          type: string
+          format: date
+responses:
+  200:
+    description: Cliente atualizado com sucesso
+    schema:
+      properties:
+        message:
+          type: string
+  400:
+    description: Erro ao atualizar o cliente
+    schema:
+      properties:
+        error:
+          type: string

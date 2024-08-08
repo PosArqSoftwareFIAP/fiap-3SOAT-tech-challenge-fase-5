@@ -1,0 +1,17 @@
+tags:
+  - Entregador
+responses:
+  200:
+    description: Entregador selecionado e tornado indisponível com sucesso
+  404:
+    description: Entregador disponível não encontrado
+    schema:
+      properties:
+        message:
+          type: string
+  400:
+    description: Erro ao recuperar e tornar o entregador indisponível
+    schema:
+      properties:
+        error:
+          type: string

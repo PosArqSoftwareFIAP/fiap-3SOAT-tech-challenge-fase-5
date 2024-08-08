@@ -1,0 +1,21 @@
+tags:
+  - EnderecoCliente
+parameters:
+  - name: id
+    in: path
+    description: ID do endereço do cliente a ser excluído
+    required: true
+    type: integer
+responses:
+  200:
+    description: Endereço para cliente excluído com sucesso
+    schema:
+      properties:
+        message:
+          type: string
+  400:
+    description: Erro ao excluir o endereço do cliente
+    schema:
+      properties:
+        error:
+          type: string

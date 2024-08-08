@@ -1,0 +1,25 @@
+tags:
+  - Pedido
+parameters:
+  - name: id
+    in: path
+    description: ID do status do pedido para consulta.
+    required: true
+    type: integer
+responses:
+  200:
+    description: Lista de pedidos com o status fornecido.
+    schema:
+      type: array
+      items:
+        type: object
+        properties:
+          id_pedido:
+            type: integer
+          #... [other properties of the 'pedido' table]
+          status_pedido:
+            type: string
+  404:
+    description: Pedido não encontrado.
+  400:
+    description: Erro ao consultar os pedidos.

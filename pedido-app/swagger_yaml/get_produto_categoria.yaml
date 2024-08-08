@@ -1,0 +1,29 @@
+tags:
+  - Produto
+parameters:
+  - name: categoria
+    in: path
+    description: Categoria do produto
+    required: true
+    type: string
+responses:
+  200:
+    description: Detalhes do produto
+    schema:
+      type: object
+      properties:
+        id_produto:
+          type: integer
+        # ... outros campos do produto ...
+  404:
+    description: Produto não encontrado
+    schema:
+      properties:
+        message:
+          type: string
+  400:
+    description: Erro ao buscar produto
+    schema:
+      properties:
+        error:
+          type: string

@@ -1,0 +1,1823 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2023-11-02T02:25:54.317Z",
+    "__export_source": "insomnia.desktop.app:v2023.5.8",
+    "resources": [
+        {
+            "_id": "req_7888e22b0c164e3bbe539bd0815dbe43",
+            "parentId": "fld_21543909696041b8b806ff354c5be3cd",
+            "modified": 1698608156187,
+            "created": 1696111008053,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/produto/cria_produto/",
+            "name": "Create",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "\n    {\n        \"id_restaurante\": 5,\n        \"nome_produto\": \"Chá de Ohara - Explosivo!\",\n        \"descricao\": \"Um chá aromático servido no Robin História Café.\",\n        \"valor\": 6.99,\n        \"disponivel\": true\n    }"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1696111049706,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_21543909696041b8b806ff354c5be3cd",
+            "parentId": "wrk_e9b8bf85344442e7aa4f5cc2e3bc10d5",
+            "modified": 1696111151275,
+            "created": 1696111037800,
+            "name": "Produto",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1694892894408,
+            "_type": "request_group"
+        },
+        {
+            "_id": "wrk_e9b8bf85344442e7aa4f5cc2e3bc10d5",
+            "parentId": null,
+            "modified": 1694892889797,
+            "created": 1694892889797,
+            "name": "FIAP-FOOD",
+            "description": "",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_b4c9cf3bd4f4487a87f495a8a3284dca",
+            "parentId": "fld_21543909696041b8b806ff354c5be3cd",
+            "modified": 1698891648825,
+            "created": 1695560183846,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/produto/consulta_produto/6/",
+            "name": "Read",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1696111049606,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_37b1675c186346a897e3f9fbf154f72a",
+            "parentId": "fld_21543909696041b8b806ff354c5be3cd",
+            "modified": 1698891711701,
+            "created": 1697134475255,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/produto/consulta_produto_categoria/cha",
+            "name": "Read_categoria",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695977813870.2812,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_7aff15eee08146ef9b0121d91acbc3ed",
+            "parentId": "fld_21543909696041b8b806ff354c5be3cd",
+            "modified": 1698891738267,
+            "created": 1696112375115,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/produto/consulta_all/",
+            "name": "Read_all",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695958780193.75,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_0a54f60391f7451eb7e8425fb5267faf",
+            "parentId": "fld_21543909696041b8b806ff354c5be3cd",
+            "modified": 1698891744981,
+            "created": 1696112384703,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/produto/consulta_restaurante/5",
+            "name": "Read_restaurante",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695882645487.625,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_66fc9f0c97114444a17a62cd9a7c9e28",
+            "parentId": "fld_21543909696041b8b806ff354c5be3cd",
+            "modified": 1698608174373,
+            "created": 1696111130725,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/produto/atualiza_produto/<int:id>",
+            "name": "Update",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695501971957,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_345a93e45f834c01beb6570662b4b375",
+            "parentId": "fld_21543909696041b8b806ff354c5be3cd",
+            "modified": 1698608176848,
+            "created": 1696111135805,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/produto/deleta_produto/18/",
+            "name": "Delete",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695197433132.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_038893d7cc7f48fd89ee2b9be60f8f0d",
+            "parentId": "fld_13cd52f139834e4c8ac4ff6e0602cb1f",
+            "modified": 1698608180195,
+            "created": 1697133288876,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/cliente/cria_cliente/",
+            "name": "Create",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "\n    {\n        \"id_restaurante\": 5,\n        \"nome_produto\": \"Chá de Ohara - Explosivo!\",\n        \"descricao\": \"Um chá aromático servido no Robin História Café.\",\n        \"valor\": 6.99,\n        \"disponivel\": true\n    }"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1696111049706,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_13cd52f139834e4c8ac4ff6e0602cb1f",
+            "parentId": "wrk_e9b8bf85344442e7aa4f5cc2e3bc10d5",
+            "modified": 1697133288870,
+            "created": 1697133288870,
+            "name": "Cliente",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1694892894383,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_45bc4f43d9ba4408be11fa2b92cb3081",
+            "parentId": "fld_13cd52f139834e4c8ac4ff6e0602cb1f",
+            "modified": 1698891758776,
+            "created": 1697133288872,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/cliente/consulta_cliente/2",
+            "name": "Read",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1696111049606,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_949e71e1f1fa41dca5ac19cf417f37df",
+            "parentId": "fld_13cd52f139834e4c8ac4ff6e0602cb1f",
+            "modified": 1698608186353,
+            "created": 1697133288887,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/cliente/cria_endereco_cliente/",
+            "name": "Create_endereco",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1696034914899.875,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_a5f1d6f9fd8341e1851914c73d335df5",
+            "parentId": "fld_13cd52f139834e4c8ac4ff6e0602cb1f",
+            "modified": 1698891783296,
+            "created": 1697133288890,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/cliente/consulta_endereco_cliente/2",
+            "name": "Read_endereco",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695996847546.8125,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_4b371848a4a248d09781766d50785d70",
+            "parentId": "fld_13cd52f139834e4c8ac4ff6e0602cb1f",
+            "modified": 1698891793196,
+            "created": 1697133288883,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/cliente/consulta_cliente_cpf/123.456.789-00",
+            "name": "Read_cpf",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695958780193.75,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_4b1c1cfd46d94ba38b35ef0976b24042",
+            "parentId": "fld_13cd52f139834e4c8ac4ff6e0602cb1f",
+            "modified": 1698891799357,
+            "created": 1697133288885,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/produto/consulta_restaurante/5",
+            "name": "Read_restaurante",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695882645487.625,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_c9a68235a4264091bb8a6521153d263a",
+            "parentId": "fld_13cd52f139834e4c8ac4ff6e0602cb1f",
+            "modified": 1698608199799,
+            "created": 1697133288878,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/cliente/atualiza_cliente/<int:id>",
+            "name": "Update",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695501971957,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_d69ed9db542340029da4f6e441696835",
+            "parentId": "fld_13cd52f139834e4c8ac4ff6e0602cb1f",
+            "modified": 1698608205042,
+            "created": 1697133414098,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/cliente/atualiza_endereco_cliente/<int:id>",
+            "name": "Update_endereco",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695425837250.875,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_8baee0c22c9c4eaf9906dbc8af0636be",
+            "parentId": "fld_13cd52f139834e4c8ac4ff6e0602cb1f",
+            "modified": 1698608209020,
+            "created": 1697133288880,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/cliente/deleta_cliente/18/",
+            "name": "Delete",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695197433132.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_3d8349b63a2d4db298b3f2d76def8bfb",
+            "parentId": "fld_13cd52f139834e4c8ac4ff6e0602cb1f",
+            "modified": 1698608212227,
+            "created": 1697133428522,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/cliente/deleta_endereco_cliente/18/",
+            "name": "Delete_endereco",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695045163720.25,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_00fa093c801d40139efa38c169a77d3e",
+            "parentId": "fld_74c0067defd14db3a1c0a54f6f0fdd01",
+            "modified": 1698890714411,
+            "created": 1696111162626,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/pedido/cria_pedido",
+            "name": "Create",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"id_cliente\": 2,\n\t\"id_endereco_cliente\": 2,\n\t\"forma_pagamento\": \"pix\",\n\t\"produtos\": [{\"id_produto\":10,\"descricao\":\"tempura\"},{\"id_produto\":11,\"descricao\":\"tempura\"}, {\"id_produto\":10,\"descricao\":\"sem_brie\"}]\n}\n\n"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1696111049706,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_74c0067defd14db3a1c0a54f6f0fdd01",
+            "parentId": "wrk_e9b8bf85344442e7aa4f5cc2e3bc10d5",
+            "modified": 1696111162622,
+            "created": 1696111162622,
+            "name": "Pedido",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1694892894358,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_e89f3197294a4b9cb7c31c0d9976dc17",
+            "parentId": "fld_74c0067defd14db3a1c0a54f6f0fdd01",
+            "modified": 1698891809179,
+            "created": 1696111162623,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/pedido/consulta_pedido/10",
+            "name": "Read",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1696111049606,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_f76ae7555d94419b815683631749188e",
+            "parentId": "fld_74c0067defd14db3a1c0a54f6f0fdd01",
+            "modified": 1698891814198,
+            "created": 1698609336752,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/pedido/consulta_pedido_status/4",
+            "name": "Read_status",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1696092015929.4688,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_d20ec6d6ef61415fb7e1703b5101e5d9",
+            "parentId": "fld_74c0067defd14db3a1c0a54f6f0fdd01",
+            "modified": 1698608223156,
+            "created": 1696111162628,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/pedido/consulta_pedido/6/",
+            "name": "Update",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695501971957,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_d1fbd5b812f244d2be23e99a60387389",
+            "parentId": "fld_74c0067defd14db3a1c0a54f6f0fdd01",
+            "modified": 1698891438510,
+            "created": 1698607452819,
+            "url": "http://127.0.0.1:5000/pedido/atualiza_pedido_preparacao/12",
+            "name": "Update_preparacao",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695482938280.4688,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_11cad2a6020e46b4ad43a66d3900b4f0",
+            "parentId": "fld_74c0067defd14db3a1c0a54f6f0fdd01",
+            "modified": 1698608231219,
+            "created": 1698607564042,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/pedido/atualiza_pedido_a_caminho/10",
+            "name": "Update_a_caminho",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695473421442.2031,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_a76986b38da44fca92b24b324d2326bd",
+            "parentId": "fld_74c0067defd14db3a1c0a54f6f0fdd01",
+            "modified": 1698608235155,
+            "created": 1698607847562,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/pedido/atualiza_pedido_pago_entregue/10",
+            "name": "Update_entregue",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695468663023.0703,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_7a69a0e0af6d4aa08ac8c23f198e9c4d",
+            "parentId": "fld_74c0067defd14db3a1c0a54f6f0fdd01",
+            "modified": 1698608239014,
+            "created": 1696111162630,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/pedido/deleta_pedido/6/",
+            "name": "Delete",
+            "description": "",
+            "method": "DELETE",
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695197433132.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_d5e295a24308455abf17bc69be71a052",
+            "parentId": "wrk_e9b8bf85344442e7aa4f5cc2e3bc10d5",
+            "modified": 1695560167255,
+            "created": 1694892894308,
+            "url": "http://127.0.0.1:5000/restaurante/consulta_restaurante/3",
+            "name": "New Request",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1694892894308,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_6137b4be468b41b39f473712423cb39c",
+            "parentId": "fld_3a6f283c35fb4ecead1a0c1d2666d80f",
+            "modified": 1698608247622,
+            "created": 1696111868742,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/pedido/cria_pedido/",
+            "name": "Create",
+            "description": "",
+            "method": "POST",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1696111049706,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_3a6f283c35fb4ecead1a0c1d2666d80f",
+            "parentId": "wrk_e9b8bf85344442e7aa4f5cc2e3bc10d5",
+            "modified": 1696111886379,
+            "created": 1696111868737,
+            "name": "Endereco",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1694892894308,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_4ae4bc8f413a44b89ea8d17489662ff8",
+            "parentId": "fld_3a6f283c35fb4ecead1a0c1d2666d80f",
+            "modified": 1698891832323,
+            "created": 1696111868740,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/cliente/consulta_endereco_cliente/2",
+            "name": "Read",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1696111049606,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_5a7a389f9b4d46ff9a933010087fbf49",
+            "parentId": "fld_3a6f283c35fb4ecead1a0c1d2666d80f",
+            "modified": 1698608254576,
+            "created": 1696111868744,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/pedido/consulta_pedido/6/",
+            "name": "Update",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695501971957,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_68cfd71ba0cd403f855c5dfd755a8ddf",
+            "parentId": "fld_3a6f283c35fb4ecead1a0c1d2666d80f",
+            "modified": 1698608258362,
+            "created": 1696111868746,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/pedido/deleta_pedido/6/",
+            "name": "Delete",
+            "description": "",
+            "method": "DELETE",
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695197433132.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_11233d5abaa1493290c05f618ed48ab3",
+            "parentId": "fld_1cd1a02b50c74ee9bb8a5813b507d1bf",
+            "modified": 1698608262087,
+            "created": 1698596574863,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/fatura/cria_fatura/",
+            "name": "Create",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"id_pedido\": \"\",\n\t\"id_cliente\": \"Sat, 16 Sep 2023 21:47:25 GMT\",\n\t\"valor\": \"Wed, 05 May 2004 00:00:00 GMT\",\n\t\"status\": \"luffy@pirateking.com\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1696111049706,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_1cd1a02b50c74ee9bb8a5813b507d1bf",
+            "parentId": "wrk_e9b8bf85344442e7aa4f5cc2e3bc10d5",
+            "modified": 1698596574859,
+            "created": 1698596574859,
+            "name": "Fatura",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1694892894283,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_6196a98de43545f790a659a14c1d2e26",
+            "parentId": "fld_1cd1a02b50c74ee9bb8a5813b507d1bf",
+            "modified": 1698891820231,
+            "created": 1698596574860,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/fatura/consulta_fatura/3",
+            "name": "Read",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1696111049606,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_efca643751e84409a915e2e74e5b77f7",
+            "parentId": "fld_1cd1a02b50c74ee9bb8a5813b507d1bf",
+            "modified": 1698891824356,
+            "created": 1698596622705,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/fatura/consulta_all",
+            "name": "Read_all",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1696072982252.9375,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_13a1d13a6c6f44e39c88664fabd1e110",
+            "parentId": "fld_1cd1a02b50c74ee9bb8a5813b507d1bf",
+            "modified": 1698890911031,
+            "created": 1698596574866,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/fatura/atualiza_fatura_pago/5",
+            "name": "Update",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695501971957,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_5b2aa0ad8fb946fab820a91eecb44fa7",
+            "parentId": "fld_1cd1a02b50c74ee9bb8a5813b507d1bf",
+            "modified": 1698608275304,
+            "created": 1698603893241,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/fatura/atualiza_fatura_pago/3",
+            "name": "Update_pago",
+            "description": "",
+            "method": "PUT",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695463904603.9375,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_ed8c6c66bd8a44a28b9b9a626f77629f",
+            "parentId": "fld_1cd1a02b50c74ee9bb8a5813b507d1bf",
+            "modified": 1698608278252,
+            "created": 1698603901305,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/fatura/atualiza_fatura_nao_pago/2",
+            "name": "Update_nao_pago",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695444870927.4062,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_402d22a9f53943febe48e7051c2358a8",
+            "parentId": "fld_1cd1a02b50c74ee9bb8a5813b507d1bf",
+            "modified": 1698890954638,
+            "created": 1698603911534,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/fatura/atualiza_fatura_cancelado/5",
+            "name": "Update_cancelado",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695435354089.1406,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_ccc44df37fcd4aef8c9dbc3ab71600eb",
+            "parentId": "fld_7356b0a2b7a84fd1ad2dd611be3b49b7",
+            "modified": 1698608286243,
+            "created": 1696111918498,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/restaurante/cria_restaurante/",
+            "name": "Create",
+            "description": "",
+            "method": "POST",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1696111049706,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_7356b0a2b7a84fd1ad2dd611be3b49b7",
+            "parentId": "wrk_e9b8bf85344442e7aa4f5cc2e3bc10d5",
+            "modified": 1696111918495,
+            "created": 1696111918495,
+            "name": "Restaurante",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1694892894258,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_ed65e2262e574c89bf4889b6085256cd",
+            "parentId": "fld_7356b0a2b7a84fd1ad2dd611be3b49b7",
+            "modified": 1698891840191,
+            "created": 1696111918496,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/cliente/consulta_endereco_cliente/2",
+            "name": "Read",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1696111049606,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_a2ce0c701398449ebd51a7d63d44380c",
+            "parentId": "fld_7356b0a2b7a84fd1ad2dd611be3b49b7",
+            "modified": 1698891895300,
+            "created": 1696112121365,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/restaurante/consulta_all/",
+            "name": "Read_all",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695806510781.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_8b76ff0942a944edbdd62c269d654ab0",
+            "parentId": "fld_7356b0a2b7a84fd1ad2dd611be3b49b7",
+            "modified": 1698891913750,
+            "created": 1696112152226,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/restaurante/consulta_categoria/Cafeteria e Livraria",
+            "name": "Read_categoria",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695654241369.25,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_6b6104afdb324776bd031e99ed34b468",
+            "parentId": "fld_7356b0a2b7a84fd1ad2dd611be3b49b7",
+            "modified": 1698608304506,
+            "created": 1696111918501,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/restaurante/atualiza_restaurante/<int>/",
+            "name": "Update",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695501971957,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_52bd770d4108416882819c6ec08f56ab",
+            "parentId": "fld_7356b0a2b7a84fd1ad2dd611be3b49b7",
+            "modified": 1698608308232,
+            "created": 1696111918504,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/restaurante/deleta_restaurante//",
+            "name": "Delete",
+            "description": "",
+            "method": "DELETE",
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695197433132.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_bb5113591a5340e2b9673a05fe1f0712",
+            "parentId": "fld_6656cc0d74c64e3c901350884e6b3b6f",
+            "modified": 1698608314423,
+            "created": 1696112918260,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/entregador/cria_entregador/",
+            "name": "Create",
+            "description": "",
+            "method": "POST",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1696111049706,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_6656cc0d74c64e3c901350884e6b3b6f",
+            "parentId": "wrk_e9b8bf85344442e7aa4f5cc2e3bc10d5",
+            "modified": 1696112918256,
+            "created": 1696112918256,
+            "name": "Entregador",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1694892894208,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_6372afdb75bd49dda2907c82d0fdcc4e",
+            "parentId": "fld_6656cc0d74c64e3c901350884e6b3b6f",
+            "modified": 1698891919742,
+            "created": 1696112918258,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/entregador/consulta_entregador/2",
+            "name": "Read",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1696111049606,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_3c6d543de2b84b4dae65eb456adc0728",
+            "parentId": "fld_6656cc0d74c64e3c901350884e6b3b6f",
+            "modified": 1698891924353,
+            "created": 1696112918266,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/entregador/consulta_all/",
+            "name": "Read_all",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695806510781.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_be3aca622342455ebbb89f50a2eaa79b",
+            "parentId": "fld_6656cc0d74c64e3c901350884e6b3b6f",
+            "modified": 1698891927899,
+            "created": 1696112918269,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/entregador/consulta_entregador_disponivel/",
+            "name": "Read_entregador_disponivel",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695654241369.25,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_2d6446479a9740699b306c58c7a014af",
+            "parentId": "fld_6656cc0d74c64e3c901350884e6b3b6f",
+            "modified": 1698891931658,
+            "created": 1696114675605,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/entregador/seleciona_entregador/",
+            "name": "Read_entregador_seleciona",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695578106663.125,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_8528a1f286b4457880ffe61da29bd091",
+            "parentId": "fld_6656cc0d74c64e3c901350884e6b3b6f",
+            "modified": 1698608328020,
+            "created": 1696112918262,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/entregador/atualiza_entregador/<int>/",
+            "name": "Update",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695501971957,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_c96509a19fec4212b822e42d0d4c60e8",
+            "parentId": "fld_6656cc0d74c64e3c901350884e6b3b6f",
+            "modified": 1698608331833,
+            "created": 1696113371536,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/entregador/atualiza_entregador_indisponivel/1",
+            "name": "Update_entregador_indisponivel",
+            "description": "",
+            "method": "PUT",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695349702544.75,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_2626db7eb27f417185018f23ffd84f51",
+            "parentId": "fld_6656cc0d74c64e3c901350884e6b3b6f",
+            "modified": 1698608336792,
+            "created": 1698601823804,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/entregador/atualiza_entregador_disponivel/9",
+            "name": "Update_entregador_disponivel",
+            "description": "",
+            "method": "PUT",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695273567838.625,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_8d784f3824984f8982d696bffbe49cb8",
+            "parentId": "fld_6656cc0d74c64e3c901350884e6b3b6f",
+            "modified": 1698608340506,
+            "created": 1696112918264,
+            "url": "https://fiap-food-app-7qsvg.ondigitalocean.app/entregador/deleta_entregador//",
+            "name": "Delete",
+            "description": "",
+            "method": "DELETE",
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1695197433132.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_1b8403c449c08fa7562ff9accb2ec07ef50ea826",
+            "parentId": "wrk_e9b8bf85344442e7aa4f5cc2e3bc10d5",
+            "modified": 1694892889805,
+            "created": 1694892889805,
+            "name": "Base Environment",
+            "data": {},
+            "dataPropertyOrder": null,
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1694892889805,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_1b8403c449c08fa7562ff9accb2ec07ef50ea826",
+            "parentId": "wrk_e9b8bf85344442e7aa4f5cc2e3bc10d5",
+            "modified": 1698891713808,
+            "created": 1694892889807,
+            "name": "Default Jar",
+            "cookies": [
+                {
+                    "key": "GPS",
+                    "value": "1",
+                    "expires": "2023-09-16T20:05:24.000Z",
+                    "domain": "youtube.com",
+                    "path": "/",
+                    "secure": true,
+                    "httpOnly": true,
+                    "hostOnly": false,
+                    "creation": "2023-09-16T19:35:25.087Z",
+                    "lastAccessed": "2023-09-16T19:35:25.087Z",
+                    "id": "20955676545107482"
+                },
+                {
+                    "key": "YSC",
+                    "value": "EzfcJzrakuw",
+                    "domain": "youtube.com",
+                    "path": "/",
+                    "secure": true,
+                    "httpOnly": true,
+                    "hostOnly": false,
+                    "creation": "2023-09-16T19:35:25.090Z",
+                    "lastAccessed": "2023-09-16T19:35:25.090Z",
+                    "sameSite": "none",
+                    "id": "22361512167724973"
+                },
+                {
+                    "key": "VISITOR_INFO1_LIVE",
+                    "value": "wVZUusIu-ts",
+                    "expires": "2024-03-14T19:35:24.000Z",
+                    "domain": "youtube.com",
+                    "path": "/",
+                    "secure": true,
+                    "httpOnly": true,
+                    "hostOnly": false,
+                    "creation": "2023-09-16T19:35:25.092Z",
+                    "lastAccessed": "2023-09-16T19:35:25.092Z",
+                    "sameSite": "none",
+                    "id": "27665797354777744"
+                },
+                {
+                    "key": "VISITOR_PRIVACY_METADATA",
+                    "value": "CgJCUhICGgA%3D",
+                    "expires": "2024-03-14T19:35:24.000Z",
+                    "domain": "youtube.com",
+                    "path": "/",
+                    "secure": true,
+                    "httpOnly": true,
+                    "hostOnly": false,
+                    "creation": "2023-09-16T19:35:25.092Z",
+                    "lastAccessed": "2023-09-16T19:35:25.092Z",
+                    "sameSite": "lax",
+                    "id": "4062059037696204"
+                },
+                {
+                    "key": "__cf_bm",
+                    "value": "zZpqJpXGtR2BNVTQuO6NRTVKAvuCwCnXPS39h8oPzp8-1698891712-0-ATd/T4S5PUsLGnCvz8k2q1l6DnxnoNidV8QQxGeR/cCz+Dk/bC2ETWiUrQhjBYhcfUJfrHJ8Fah1tirl5iVDDgo=",
+                    "expires": "2023-11-02T02:51:52.000Z",
+                    "domain": "ondigitalocean.app",
+                    "path": "/",
+                    "httpOnly": true,
+                    "hostOnly": false,
+                    "creation": "2023-10-12T19:12:17.981Z",
+                    "lastAccessed": "2023-11-02T02:21:53.807Z",
+                    "sameSite": "none",
+                    "id": "9825790946566684"
+                }
+            ],
+            "_type": "cookie_jar"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+tags:
+  - Entregador
+parameters:
+  - name: id
+    in: path
+    description: ID do entregador
+    required: true
+    type: integer
+responses:
+  200:
+    description: Informações detalhadas do entregador
+  404:
+    description: Entregador não encontrado
+    schema:
+      properties:
+        message:
+          type: string
+  400:
+    description: Erro ao recuperar o entregador
+    schema:
+      properties:
+        error:
+          type: string

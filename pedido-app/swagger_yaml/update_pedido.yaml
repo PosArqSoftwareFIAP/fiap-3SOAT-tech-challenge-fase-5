@@ -1,0 +1,38 @@
+tags:
+  - Pedido
+parameters:
+  - name: id
+    in: path
+    description: ID do pedido a ser atualizado.
+    required: true
+    type: integer
+  - in: body
+    name: body
+    description: Atributos do pedido a serem atualizados.
+    schema:
+      type: object
+      properties:
+        id_cliente:
+          type: integer
+        id_restaurante:
+          type: integer
+        id_entregador:
+          type: integer
+        id_endereco_cliente:
+          type: integer
+        forma_pagamento:
+          type: string
+        produtos:
+          type: string
+        status_pedido:
+          type: integer
+        valor:
+          type: float
+        data_hora_pedido:
+          type: string
+          format: date-time
+responses:
+  200:
+    description: Pedido atualizado com sucesso.
+  400:
+    description: Erro ao atualizar o pedido.

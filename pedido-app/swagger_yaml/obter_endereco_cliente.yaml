@@ -1,0 +1,46 @@
+tags:
+  - EnderecoCliente
+parameters:
+  - name: id
+    in: path
+    description: ID do cliente
+    required: true
+    type: integer
+responses:
+  200:
+    description: Lista de endereços do cliente
+    schema:
+      type: array
+      items:
+        type: object
+        properties:
+          id_endereco_cliente:
+            type: integer
+          rua:
+            type: string
+          numero:
+            type: integer
+          bairro:
+            type: string
+          cep:
+            type: string
+          estado:
+            type: string
+          cidade:
+            type: string
+          complemento:
+            type: string
+          id_cliente:
+            type: integer
+  404:
+    description: Endereço para cliente não encontrado
+    schema:
+      properties:
+        message:
+          type: string
+  400:
+    description: Erro ao recuperar o endereço do cliente
+    schema:
+      properties:
+        error:
+          type: string

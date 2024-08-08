@@ -1,0 +1,40 @@
+tags:
+  - Restaurante
+parameters:
+  - in: path
+    name: categoria
+    type: string
+    required: true
+    description: Categoria dos restaurantes a ser consultada
+responses:
+  200:
+    description: Retorna uma lista de restaurantes da categoria especificada
+    schema:
+      type: array
+      items:
+        type: object
+        properties:
+          nome:
+            type: string
+          rua:
+            type: string
+          numero:
+            type: integer
+          bairro:
+            type: string
+          cep:
+            type: string
+          estado:
+            type: string
+          cidade:
+            type: string
+          descricao:
+            type: string
+          categoria:
+            type: string
+          cnpj:
+            type: string
+  404:
+    description: Nenhum restaurante da categoria especificada encontrado
+  400:
+    description: Erro ao recuperar informações dos restaurantes da categoria

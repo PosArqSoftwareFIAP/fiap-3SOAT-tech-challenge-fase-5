@@ -1,0 +1,41 @@
+tags:
+  - Produto
+parameters:
+  - name: body
+    in: body
+    required: true
+    schema:
+      properties:
+        id_restaurante:
+          type: integer
+          description: ID do restaurante associado ao produto
+          required: true
+        nome_produto:
+          type: string
+          description: Nome do produto
+          required: true
+        descricao:
+          type: string
+          description: Descrição do produto
+          required: true
+        valor:
+          type: float
+          description: Preço do produto
+          required: true
+        disponivel:
+          type: integer
+          description: Quantidade disponível do produto
+          required: true
+responses:
+  201:
+    description: Produto criado com sucesso
+    schema:
+      properties:
+        message:
+          type: string
+  400:
+    description: Erro ao criar produto
+    schema:
+      properties:
+        error:
+          type: string

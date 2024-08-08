@@ -1,0 +1,34 @@
+tags:
+  - Cliente
+parameters:
+  - name: body
+    in: body
+    description: Informações do cliente a ser criado
+    required: true
+    schema:
+      type: object
+      properties:
+        nome:
+          type: string
+        cpf:
+          type: string
+        telefone:
+          type: string
+        email:
+          type: string
+        data_nascimento:
+          type: string
+          format: date
+responses:
+  201:
+    description: Cliente criado com sucesso
+    schema:
+      properties:
+        message:
+          type: string
+  400:
+    description: Erro ao criar o cliente
+    schema:
+      properties:
+        error:
+          type: string
