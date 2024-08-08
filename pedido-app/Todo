@@ -1,0 +1,2 @@
+- Arrumar os metodos de deletar 
+    - Erro no commit, não esta validando retorno do SQL.
