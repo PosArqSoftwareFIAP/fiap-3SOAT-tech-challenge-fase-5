@@ -1,0 +1,17 @@
+tags:
+  - Entregador
+responses:
+  200:
+    description: Lista de entregadores
+  404:
+    description: Entregadores não encontrados
+    schema:
+      properties:
+        message:
+          type: string
+  400:
+    description: Erro ao recuperar os entregadores
+    schema:
+      properties:
+        error:
+          type: string

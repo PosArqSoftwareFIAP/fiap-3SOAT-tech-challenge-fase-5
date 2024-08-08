@@ -1,0 +1,39 @@
+tags:
+  - EnderecoCliente
+parameters:
+  - name: body
+    in: body
+    description: Informações do endereço do cliente a ser criado
+    required: true
+    schema:
+      type: object
+      properties:
+        rua:
+          type: string
+        numero:
+          type: integer
+        bairro:
+          type: string
+        cep:
+          type: string
+        estado:
+          type: string
+        cidade:
+          type: string
+        complemento:
+          type: string
+        id_cliente:
+          type: integer
+responses:
+  201:
+    description: Endereço para cliente criado com sucesso
+    schema:
+      properties:
+        message:
+          type: string
+  400:
+    description: Erro ao criar o endereço do cliente
+    schema:
+      properties:
+        error:
+          type: string

@@ -1,0 +1,24 @@
+tags:
+  - Produto
+responses:
+  200:
+    description: Lista de todos os produtos
+    schema:
+      type: array
+      items:
+        properties:
+          id_produto:
+            type: integer
+          # ... outros campos do produto ...
+  404:
+    description: Produto não encontrado
+    schema:
+      properties:
+        message:
+          type: string
+  400:
+    description: Erro ao buscar produtos
+    schema:
+      properties:
+        error:
+          type: string

@@ -1,0 +1,39 @@
+tags:
+  - Pedido
+parameters:
+  - name: pedido
+    in: body
+    description: Informações do pedido para ser criado.
+    schema:
+      type: object
+      required:
+        - id_cliente
+        - id_endereco_cliente
+        - forma_pagamento
+        - produtos
+      properties:
+        id_cliente:
+          type: integer
+          description: ID do cliente.
+        id_endereco_cliente:
+          type: integer
+          description: ID do endereço do cliente.
+        forma_pagamento:
+          type: string
+          description: Forma de pagamento.
+        produtos:
+          type: array
+          items:
+            type: object
+            properties:
+              id_produto:
+                type: integer
+                description: ID do produto.
+              descricao:
+                type: string
+                description: Descrição do produto.
+responses:
+  201:
+    description: Pedido criado com sucesso.
+  400:
+    description: Pedido inválido, produtos de mais de um restaurante no pedido.

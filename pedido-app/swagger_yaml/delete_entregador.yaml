@@ -1,0 +1,21 @@
+tags:
+  - Entregador
+parameters:
+  - name: id
+    in: path
+    description: ID do entregador a ser excluído
+    required: true
+    type: integer
+responses:
+  200:
+    description: Entregador excluído com sucesso
+    schema:
+      properties:
+        message:
+          type: string
+  400:
+    description: Erro ao excluir o entregador
+    schema:
+      properties:
+        error:
+          type: string

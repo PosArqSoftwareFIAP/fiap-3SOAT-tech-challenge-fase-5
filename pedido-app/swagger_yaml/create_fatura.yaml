@@ -1,0 +1,33 @@
+tags:
+  - Fatura
+parameters:
+  - name: body
+    in: body
+    required: true
+    schema:
+      properties:
+        id_pedido:
+          type: integer
+          description: ID do pedido
+        id_cliente:
+          type: integer
+          description: ID do cliente
+        valor:
+          type: float
+          description: Valor da fatura
+        status:
+          type: string
+          description: Status da fatura
+responses:
+  201:
+    description: Fatura criada com sucesso
+    schema:
+      properties:
+        message:
+          type: string
+  400:
+    description: Erro ao criar fatura
+    schema:
+      properties:
+        error:
+          type: string

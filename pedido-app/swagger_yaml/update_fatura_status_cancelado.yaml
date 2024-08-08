@@ -1,0 +1,21 @@
+tags:
+  - Fatura
+parameters:
+  - name: id
+    in: path
+    description: ID da fatura
+    required: true
+    type: integer
+responses:
+  200:
+    description: Fatura atualizada para "Cancelado" com sucesso
+    schema:
+      properties:
+        message:
+          type: string
+  400:
+    description: Erro ao cancelar fatura
+    schema:
+      properties:
+        error:
+          type: string

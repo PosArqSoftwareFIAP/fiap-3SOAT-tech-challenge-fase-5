@@ -1,0 +1,44 @@
+tags:
+  - Restaurante
+parameters:
+  - in: body
+    name: body
+    schema:
+      type: object
+      required:
+        - nome
+        - rua
+        - numero
+        - bairro
+        - cep
+        - estado
+        - cidade
+        - descricao
+        - categoria
+        - cnpj
+      properties:
+        nome:
+          type: string
+        rua:
+          type: string
+        numero:
+          type: integer
+        bairro:
+          type: string
+        cep:
+          type: string
+        estado:
+          type: string
+        cidade:
+          type: string
+        descricao:
+          type: string
+        categoria:
+          type: string
+        cnpj:
+          type: string
+responses:
+  201:
+    description: Restaurante criado com sucesso
+  400:
+    description: Erro ao criar o restaurante

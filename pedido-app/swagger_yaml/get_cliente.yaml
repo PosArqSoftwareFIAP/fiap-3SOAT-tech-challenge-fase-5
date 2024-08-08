@@ -1,0 +1,23 @@
+tags:
+  - Cliente
+parameters:
+  - name: id
+    in: path
+    description: ID do cliente a ser consultado
+    required: true
+    type: integer
+responses:
+  200:
+    description: Cliente recuperado com sucesso
+  404:
+    description: Cliente não encontrado
+    schema:
+      properties:
+        message:
+          type: string
+  400:
+    description: Erro ao consultar o cliente
+    schema:
+      properties:
+        error:
+          type: string

@@ -1,0 +1,42 @@
+tags:
+  - Cliente
+parameters:
+  - name: cpf
+    in: path
+    description: CPF do cliente
+    required: true
+    type: string
+responses:
+  200:
+    description: Informações do cliente baseado no CPF fornecido
+    schema:
+      type: object
+      properties:
+        id_cliente:
+          type: integer
+        nome:
+          type: string
+        cpf:
+          type: string
+        telefone:
+          type: string
+        email:
+          type: string
+        data_nascimento:
+          type: string
+          format: date
+        data_cadastro:
+          type: string
+          format: datetime
+  404:
+    description: Cliente não encontrado
+    schema:
+      properties:
+        message:
+          type: string
+  400:
+    description: Erro ao consultar cliente pelo CPF
+    schema:
+      properties:
+        error:
+          type: string

@@ -1,0 +1,1 @@
+from .avaliacao_rotas import avaliacao_bp

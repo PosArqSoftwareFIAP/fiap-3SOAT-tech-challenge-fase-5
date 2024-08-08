@@ -1,0 +1,13 @@
+tags:
+  - Pedido
+parameters:
+  - name: id
+    in: path
+    description: ID do pedido a ser atualizado.
+    required: true
+    type: integer
+responses:
+  200:
+    description: Pedido cancelado com sucesso.
+  400:
+    description: Erro ao atualizar o pedido.
