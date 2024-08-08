@@ -1,3 +1,8 @@
 # fiap-3SOAT-tech-challenge-fase-5
  
-![Fluxo Saga](imgs/fluxo saga 3.drawio.png)
+
+# Arquitetura
+## **Fluxo SAGA**
+   <div align="center">
+   <img src="imgs\fluxo saga 3.drawio.png" height="400" alt="Fluxo SAGA">
+   </div>
