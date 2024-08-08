@@ -4,5 +4,5 @@
 # Arquitetura
 ## **Fluxo SAGA**
    <div align="center">
-   <img src="imgs\fluxo saga 3.drawio.png" height="400" alt="Fluxo SAGA">
+   <img src="imgs\fluxo saga 3.drawio.png" alt="Fluxo SAGA">
    </div>
