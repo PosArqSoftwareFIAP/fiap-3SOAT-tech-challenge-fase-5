@@ -1,7 +1,7 @@
 FROM rabbitmq:3-management
 
 # Copiar o script de inicialização
-COPY init.sh /init.sh
+COPY rabbitMQ/init.sh /init.sh
 
 # Dar permissão de execução ao script
 RUN chmod +x /init.sh
