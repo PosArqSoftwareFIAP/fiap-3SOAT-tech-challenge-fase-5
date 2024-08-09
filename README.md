@@ -8,6 +8,7 @@ Os nossos microsserviços estão sendo executados utilizando containers Docker n
    <img src="imgs\Desenho_Arquitetura_FIAPFOOD.png" alt="Estrutura Kubernetes">
    </div>
 
+
 Também é necessário ajustar as variáveis de ambiente de acesso ao MySQL e as urls dos serviços fatura e entregador no arquivo config.py do pedido-app:
 
    <div align="center">
@@ -27,7 +28,11 @@ Escolhemos o RabbitMQ para ser o nosso gerenciador de mensageria. Criamos as fil
 Geramos os relatórios de OWASP ZAP para os endpoints: 
 
 **/produto/consulta_restaurante/5** (Cardápio)
-**/pedido/cria_pedido** (checkout)
+
+**/pedido/cria_pedido** (Checkout)
+
+**/fatura/cria_fatura** (Geração de Pagamento)
+
 
 
    <div align="center">
