@@ -41,3 +41,6 @@ Durante nossos testes, não tivemos nenhum alerta de nível alto.
    <div align="center">
    <img src="imgs\zap2.png" alt="zap2">
    </div>
+    <div align="center">
+   <img src="imgs\zap3.png" alt="zap2">
+   </div>
