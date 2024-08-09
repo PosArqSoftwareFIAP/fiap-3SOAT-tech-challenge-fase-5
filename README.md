@@ -56,7 +56,7 @@ Segue Relatório de Impacto à Proteção de Dados gerado para nossa aplicação
 https://github.com/PosArqSoftwareFIAP/fiap-3SOAT-tech-challenge-fase-5/blob/develop/arquivos/RIPD_GRUPO_5_3SOAT.pdf
 
 
-Nossa API possui o endpoint **/cliente/deleta_cliente/<id>/** que permite que o usuário delete totalmente seus dados da plataforma.
+Nossa API possui o endpoint **/cliente/deleta_cliente/id/** que permite que o usuário delete totalmente seus dados da plataforma.
 
-Também possui o endpoint **/cliente/atualiza_cliente/<id>** que permite que o usuário altere todos os campos salvos no registro dele. (nome,cpf,telefone,email,data_nascimento)
+Também possui o endpoint **/cliente/atualiza_cliente/id** que permite que o usuário altere todos os campos salvos no registro dele. (nome,cpf,telefone,email,data_nascimento)
 
