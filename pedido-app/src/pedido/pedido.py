@@ -7,6 +7,7 @@ from itertools import groupby
 from datetime import datetime
 import traceback
 import requests
+import config
 
 pedido_bp = Blueprint('pedido', __name__)
 
@@ -107,7 +108,7 @@ def create_pedido():
 
 
 
-            response = requests.post("https://octopus-app-865nn.ondigitalocean.app/fatura/cria_fatura/",headers=headers,json=dados,verify=False, allow_redirects=False)
+            response = requests.post(f"{config.url_fatura}/fatura/cria_fatura/",headers=headers,json=dados,verify=False, allow_redirects=False)
             print(response.status_code)
             print(response.headers) 
             if response.status_code == 301:
@@ -268,7 +269,7 @@ def update_pedido_preparacao(id):
         print("Passou: query_fatura, ",file=sys.stderr)
         print(fatura,"\n",file=sys.stderr)
         if fatura[4] == 2:
-            entregador = requests.get('https://oyster-app-pov9e.ondigitalocean.app/entregador/seleciona_entregador/').json()
+            entregador = requests.get(f'{config.url_entregador}/entregador/seleciona_entregador/').json()
 
             print(entregador,file=sys.stderr)
             
@@ -329,7 +330,7 @@ def update_pedido_entregue(id):
         print(pedido,"\n",file=sys.stderr)
 
 
-        entregador = requests.put(f"https://oyster-app-pov9e.ondigitalocean.app/entregador/atualiza_entregador_disponivel/{pedido[3]}").json()
+        entregador = requests.put(f"{config.url_entregador}/entregador/atualiza_entregador_disponivel/{pedido[3]}").json()
 
         print(entregador,file=sys.stderr)
         

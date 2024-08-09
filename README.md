@@ -1,7 +1,13 @@
 # fiap-3SOAT-tech-challenge-fase-5
  
 
-# Arquitetura
+## **Instruções para Executar**
+Os nossos microsserviços estão sendo executados utilizando containers Docker no Kubernetes na Cloud DigitalOcean. Para executá-los basta fazer o build e deploy das imagens a partir dos Dockerfiles nos diretórios pedido-app, fatura-app e entregador-app.
+
+   <div align="center">
+   <img src="imgs\Desenho_Arquitetura_FIAPFOOD.png" alt="Estrutura Kubernetes">
+   </div>
+
 ## **Padrão SAGA**
 O padrão SAGA escolhido foi a **Orquestração**. Escolhemos este padrão devido à complexidade do fluxo e quantidade interações dos outros microsserviços com o microsserviço Pedido. Assim sendo, elegemos o serviço de pedido como o orquestrador de todo o fluxo.
 
