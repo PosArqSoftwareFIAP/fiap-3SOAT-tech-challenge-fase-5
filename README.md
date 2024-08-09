@@ -33,8 +33,11 @@ Geramos os relatórios de OWASP ZAP para os endpoints:
 
 **/fatura/cria_fatura** (Geração de Pagamento)
 
-
+Durante nossos testes, não tivemos nenhum alerta de nível alto.
 
    <div align="center">
-   <img src="imgs\fluxo saga 3.drawio.png" alt="Fluxo SAGA">
+   <img src="imgs\zap1.png" alt="zap1">
+   </div>
+   <div align="center">
+   <img src="imgs\zap2.png" alt="zap2">
    </div>
