@@ -11,7 +11,7 @@ Os nossos microsserviços estão sendo executados utilizando containers Docker n
 Também é necessário ajustar as variáveis de ambiente de acesso ao MySQL e as urls dos serviços fatura e entregador no arquivo config.py do pedido-app:
 
    <div align="center">
-   <img src="imgs\ulrs.png" alt="Urls">
+   <img src="imgs\urls.png" alt="urls">
    </div>
 
 ## **Padrão SAGA**
